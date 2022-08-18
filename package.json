@@ -1,11 +1,11 @@
 {
   "name": "polls",
   "version": "1.0.0",
-  "description": "project for portfolio, which allows CRUD of users and polls. It uses the technologies: express and mongodb with mongoose ORM.",
-  "main": "index.js",
+  "description": "project for portfolio, which allows CRUD of users and polls. It uses the technologies: express framework, mongodb with mongoose ORM, validation with JOI, cryptography with crypto and bcrypt libraries and authentication with JWT and redis",
+  "main": "app.js",
   "scripts": {
-    "start": "node src/index.js",
-    "start:dev": "nodemon src/index.js",
+    "start": "node src/app.js",
+    "start:dev": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +22,14 @@
     "nodemon": "^2.0.19"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "mongoose": "^6.4.4"
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.4",
+    "ms": "^2.1.3",
+    "redis": "^4.2.0"
   }
 }
